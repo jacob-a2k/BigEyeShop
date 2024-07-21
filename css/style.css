@@ -240,13 +240,14 @@ form.search-form button:hover {
 
 .slider {
   /* background-color: red; */
+  max-width: 135rem;
   margin: 0 auto;
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-auto-flow: column;
   gap: 3rem;
-
   align-items: center;
+  /* position: relative; */
 }
 
 .slide {
@@ -255,16 +256,16 @@ form.search-form button:hover {
   width: 20rem;
   height: 80%;
   display: flex;
-  transition: 1s;
   border-radius: 5%;
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.254);
   overflow: hidden;
   position: relative;
-  transition: all 0.3s;
+  transition: transform 0.3s, top 5s ease;
 }
 
 .slide:hover {
-  transform: translateY(-1rem);
+  top: -2rem;
+  /* transform: translateY(-1rem); */
   box-shadow: 0 0.6rem 1.4rem rgba(0, 0, 0, 0.254);
 }
 
