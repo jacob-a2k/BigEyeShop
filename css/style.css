@@ -8,6 +8,7 @@ html {
   font-size: 62.5%;
   /* font-family: "Times New Roman", sans-serif; */
   font-family: "Arial", sans-serif;
+  scroll-behavior: smooth;
 }
 /* ////////////////////// */
 /* HEADER WITH NAVIGATION */
@@ -187,12 +188,47 @@ form.search-form button:hover {
   top: 26%;
   left: 50%;
   z-index: 2;
+  animation: showFromLeft 3s ease-in-out 1;
 }
 
 .tank {
   position: absolute;
   top: 18%;
   left: 5%;
+  animation: showFromBottom 2s ease-in-out 1;
+}
+
+@keyframes showFromBottom {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes showFromLeft {
+  0% {
+    transform: translateX(-10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes showFromTop {
+  0% {
+    transform: translateY(-10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .hero-img.tank img {
@@ -205,7 +241,11 @@ form.search-form button:hover {
   top: 50%;
   left: 22%;
   z-index: 1;
+  animation: showFromTop 3s ease-in-out 1;
 }
+
+/* ////////////////////// */
+/* NEW PRODUCTS SECTION */
 
 /* ////////////////////// */
 /* RPOMOTION SECTION */
@@ -224,9 +264,10 @@ form.search-form button:hover {
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
   padding: 4rem;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.461);
 }
 
-.section-title h2 {
+.section-promotion .section-title h2 {
   text-shadow: 2px 3px 3px rgba(255, 255, 0, 0.688);
 }
 
@@ -353,4 +394,52 @@ form.search-form button:hover {
 .slider-btn-rigth {
   right: 0;
   transform: translate(50%, -50%);
+}
+
+/* ////////////////////// */
+/* SHOP FEATURES SECTION */
+
+.section-shopFeatures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  max-width: 150rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  margin-bottom: 9.6rem;
+}
+
+.grid-4-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.feature-icon {
+  color: #0101a3;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #e6e6f6;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #444;
 }
