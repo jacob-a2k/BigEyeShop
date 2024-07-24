@@ -13,13 +13,28 @@ html {
 /* ////////////////////// */
 /* HEADER WITH NAVIGATION */
 
+.header-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .header {
+  /* height: 9rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
   border-bottom: 1px solid #eee;
   background-color: #fff;
+  z-index: 999;
+  width: 100%;
+  position: relative;
+}
+
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.714);
 }
 
 .logo-container {
@@ -30,6 +45,13 @@ html {
   border-radius: 50%;
   width: 8rem;
   height: 8rem;
+}
+
+.nav-container {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-list {
@@ -61,6 +83,43 @@ html {
   font-weight: 550;
 }
 
+.header-shop {
+  font-size: 6rem;
+  /* text-shadow: 2px 2px 2px #010182; */
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  animation: slideBias 3s ease-in-out;
+}
+
+.header-shop a {
+  color: #0c0ce9;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.526);
+  text-decoration: none;
+}
+.header-shop a:hover {
+  text-shadow: 2px 2px 2px #010182;
+  /* color: #0101a3; */
+}
+
+/* .header-shop:hover {
+  animation: slideBias 2s ease-in-out;
+} */
+
+@keyframes slideBias {
+  0% {
+    transform: translate(-10rem 10rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-5rem 5rem);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(0 0);
+    opacity: 1;
+  }
+}
+
 .header-btns {
   display: flex;
   gap: 2rem;
@@ -81,7 +140,7 @@ form.search-form input[type="text"] {
 
 form.search-form button {
   width: 20%;
-  background-color: rgb(12, 12, 233);
+  background-color: #0c0ce9;
   color: #fff;
   border: 1px solid grey;
   border-left: none;
@@ -250,6 +309,7 @@ form.search-form button:hover {
 .section-new {
   /* background-color: lightgreen; */
   text-align: center;
+  /* margin-top: 10rem; */
 }
 
 .grid-newProducts {
@@ -381,7 +441,8 @@ form.search-form button:hover {
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.254);
   overflow: hidden;
   position: relative;
-  transition: transform 0.3s, top 5s ease;
+  transition: transform 0.3s, top 0.3s ease-in-out 0.05s;
+  top: 0;
 }
 
 .slide:hover {
@@ -616,7 +677,7 @@ form.search-form button:hover {
 .box-lower-text {
   font-size: 1.4rem;
   color: #fff;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.853);
+  text-shadow: 2px 2px 8px #000000da;
 }
 
 .form-box {

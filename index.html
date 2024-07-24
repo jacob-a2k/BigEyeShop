@@ -9,69 +9,73 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo-container">
-      <a href="index.html"><img class="img-logo" src="img/logo.jpg" alt="Logo firmy(oko na niebieskim tle)"></a>
-    </div>
-    <div class="nav-socials-container">
-      <div class="socials"></div>
-      <nav class="header-nav">
-        <ul class="nav-list">
-          <li id="now"><a href="#new">Nowości</a></li>
-          <li id="prom"><a href="#promotion">Promocje</a></li>
-          <li id="zab"><a href="#priority">Priorytety</a></li>
-          <li id="klo"><a href="">Klocki</a></li>
-          <li id="puz"><a href="">Puzle</a></li>
-          <li id="akc"><a href="">Akcesoria</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header-btns">
-      <div class="search">
-        <form class="search-form">
-          <input type="text" class="search-input" placeholder="Wyszukaj">
-          <button type="submit" class="search-btn"><ion-icon class="icon-size"
-              name="search-outline"></ion-icon></button>
-        </form>
+  <header class="header-container" id="hero">
+    <div class="header sticky">
+      <div class="logo-container">
+        <a href="#hero"><img class="img-logo" src="img/logo.jpg" alt="Logo firmy(oko na niebieskim tle)"></a>
       </div>
-      <div class="action-icons">
-        <div class="basket"><ion-icon class="icon-size" name="heart-outline"></ion-icon></div>
-        <div class="basket"><ion-icon class="icon-size" name="bag-outline"></ion-icon></div>
-        <div class="log-in"><ion-icon class="icon-size" name="person-circle-outline"></ion-icon></div>
-      </div>
-    </div>
-  </header>
-
-  <section class="section-hero">
-    <div class="hero-container">
-      <div class="hero-text-box">
-        <h1 class="hero_h1"><q>Nauka jest siostrą zabawy, a czas bratem wieku</q></h1>
-        <p class="hero_h1_p">Stawiamy na <span>rozwój,</span> poprzez zabawe starannie wyselekcjonowanymi przedmiotami
-        </p>
-        <div class="hero-customers">
-          <div class="customers-imgs">
-            <img src="/img/customers/customer-1.jpg" alt="">
-            <img src="/img/customers/customer-2.jpg" alt="">
-            <img src="/img/customers/customer-3.jpg" alt="">
-            <img src="/img/customers/customer-4.jpg" alt="">
-            <img src="/img/customers/customer-5.jpg" alt="">
+      <div class="nav-socials-container">
+        <div class="nav-container">
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li id="now"><a href="#new">Nowości</a></li>
+              <li id="prom"><a href="#promotion">Promocje</a></li>
+              <li id="zab"><a href="#priority">Priorytety</a></li>
+              <li id="klo"><a href="#footer">Newsletter</a></li>
+            </ul>
+          </nav>
+          <div class="header-shop">
+            <a href="#">Sklep</a>
           </div>
-          <p class="customers-text"><span>5000+</span> zadowolonych klientów</p>
         </div>
       </div>
-      <div class="hero-img-box">
-        <div class="hero-img boat">
-          <img src="img/vehicles/boat.jpg" alt="">
+      <div class="header-btns">
+        <div class="search">
+          <form class="search-form">
+            <input type="text" class="form-input search-input" placeholder="Wyszukaj">
+            <button type="submit" class="search-btn"><ion-icon class="icon-size"
+                name="search-outline"></ion-icon></button>
+          </form>
         </div>
-        <div class="hero-img helicopter">
-          <img src="img/vehicles/helicopter.jpg" alt="">
-        </div>
-        <div class="hero-img tank">
-          <img src="img/vehicles/tank.jpg" alt="">
+        <div class="action-icons">
+          <div class="basket"><ion-icon class="icon-size" name="heart-outline"></ion-icon></div>
+          <div class="basket"><ion-icon class="icon-size" name="bag-outline"></ion-icon></div>
+          <div class="log-in"><ion-icon class="icon-size" name="person-circle-outline"></ion-icon></div>
         </div>
       </div>
     </div>
-  </section>
+
+    <section class="section-hero">
+      <div class="hero-container">
+        <div class="hero-text-box">
+          <h1 class="hero_h1"><q>Nauka jest siostrą zabawy, a czas bratem wieku</q></h1>
+          <p class="hero_h1_p">Stawiamy na <span>rozwój,</span> poprzez zabawe starannie wyselekcjonowanymi przedmiotami
+          </p>
+          <div class="hero-customers">
+            <div class="customers-imgs">
+              <img src="/img/customers/customer-1.jpg" alt="">
+              <img src="/img/customers/customer-2.jpg" alt="">
+              <img src="/img/customers/customer-3.jpg" alt="">
+              <img src="/img/customers/customer-4.jpg" alt="">
+              <img src="/img/customers/customer-5.jpg" alt="">
+            </div>
+            <p class="customers-text"><span>5000+</span> zadowolonych klientów</p>
+          </div>
+        </div>
+        <div class="hero-img-box">
+          <div class="hero-img boat">
+            <img src="img/vehicles/boat.jpg" alt="">
+          </div>
+          <div class="hero-img helicopter">
+            <img src="img/vehicles/helicopter.jpg" alt="">
+          </div>
+          <div class="hero-img tank">
+            <img src="img/vehicles/tank.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
 
   <section class="section-new" id="new">
     <div class="section-title">

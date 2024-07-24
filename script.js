@@ -1,8 +1,29 @@
 "use strict";
 
 ////////////////
-// SLIDER - PROMOTION SECTION
+// STICKY NAVIGATION
+const header = document.querySelector(".header-container");
+const navBox = document.querySelector(".header");
 
+const navHeight = navBox.getBoundingClientRect().height;
+// console.log(navHeight);
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  console.log(entry);
+  if (!entry.isIntersecting) navBox.classList.add("sticky");
+  else navBox.classList.remove("sticky");
+};
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
+headerObserver.observe(header);
+
+////////////////
+// SLIDER - PROMOTION SECTION
 const slides = document.querySelectorAll(".slide");
 const btnLeft = document.querySelector(".slider-btn-left");
 const btnRight = document.querySelector(".slider-btn-rigth");
@@ -18,12 +39,9 @@ const goToSlide = function (slide) {
 
 // Next slide
 const nextSlide = function () {
-  if (curSlide === 4) {
-    return;
-  } else {
-    curSlide++;
-    goToSlide(curSlide);
-  }
+  if (curSlide === 4) return;
+  curSlide++;
+  goToSlide(curSlide);
 };
 
 const prevSlide = function () {
