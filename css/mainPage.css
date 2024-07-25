@@ -20,14 +20,14 @@ html {
 }
 
 .header {
-  /* height: 9rem; */
+  height: 9rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
   border-bottom: 1px solid #eee;
   background-color: #fff;
-  z-index: 999;
+  z-index: 100;
   width: 100%;
   position: relative;
 }
@@ -47,11 +47,17 @@ html {
   height: 8rem;
 }
 
+.nav-socials-container {
+  height: 9rem;
+  display: flex;
+}
+
 .nav-container {
   display: flex;
   gap: 6rem;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .nav-list {
@@ -83,27 +89,72 @@ html {
   font-weight: 550;
 }
 
+/* ////////////////////// */
+/* DROP DOWN WINDOW */
+
 .header-shop {
+  height: 100%;
+  display: flex;
+  text-align: center;
+}
+
+.header-shop button {
   font-size: 6rem;
-  /* text-shadow: 2px 2px 2px #010182; */
   font-weight: 600;
   letter-spacing: 0.1rem;
   animation: slideBias 3s ease-in-out;
-}
 
-.header-shop a {
   color: #0c0ce9;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.526);
   text-decoration: none;
 }
-.header-shop a:hover {
+
+.header-shop button:hover {
   text-shadow: 2px 2px 2px #010182;
-  /* color: #0101a3; */
 }
 
-/* .header-shop:hover {
-  animation: slideBias 2s ease-in-out;
-} */
+.drop-down .drop-btn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.drop-down .drop-content {
+  display: none;
+}
+
+.drop-down:hover .drop-content {
+  display: flex;
+  background-color: lightgrey;
+}
+
+.drop-btn a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.drop-content {
+  position: absolute;
+  background-color: none;
+  min-width: 30rem;
+  font-size: 2rem;
+  top: 9rem;
+  padding: 1.4rem;
+
+  display: flex;
+  gap: 4rem;
+}
+
+.drop-content a {
+  text-decoration: none;
+  color: #333;
+}
+
+.drop-content a:hover {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
 
 @keyframes slideBias {
   0% {
@@ -593,6 +644,7 @@ form.search-form button:hover {
 
 /* ////////////////////// */
 /* SHOP FOOTER SECTION */
+
 .page-footer {
   display: grid;
   grid-template-columns: 34fr 64fr;
