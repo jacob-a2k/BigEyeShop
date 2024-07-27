@@ -1,0 +1,157 @@
+/* /////////////// */
+/* HEADER */
+
+.page-header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.2rem;
+}
+
+.header-content {
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 100%; */
+}
+
+.header-left {
+  display: flex;
+  gap: 6rem;
+  justify-content: left;
+  align-items: center;
+}
+
+.header-logo-and-name a {
+  text-decoration: none;
+}
+
+.img-and-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-right {
+  justify-content: center;
+}
+
+/* /////////////// */
+/* NAV */
+
+.header-section-nav {
+  border-bottom: 1px solid #eee;
+}
+
+.shop-nav-container {
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  gap: 6rem;
+}
+
+.header-nav-list {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: left;
+  gap: 3rem;
+  font-size: 2rem;
+  font-weight: 550;
+}
+
+.header-nav-list li {
+  list-style-type: none;
+}
+
+.header-nav-list a {
+  text-decoration: none;
+  color: #555;
+}
+
+.header-nav-list a:hover {
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+.search {
+  padding: 0.4rem;
+}
+
+.search-form {
+  min-width: 40rem;
+}
+
+/* /////////////// */
+/* MAIN CONTENT */
+
+.content-container {
+  display: grid;
+  grid-template-columns: 20fr 80fr;
+  max-width: 150rem;
+  margin: 0 auto;
+  gap: 6rem;
+}
+
+.container-title {
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 2rem 0;
+}
+
+.sidebar-list li {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  list-style-type: square;
+}
+
+.sidebar-list a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4rem;
+}
+
+.product-box {
+  border: 1px solid red;
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+}
+
+.data-box {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  font-size: 2rem;
+  justify-items: center;
+}
+
+.prize-box {
+  /* text-align: center;
+  justify-content: center;*/
+}
+
+.basket-box {
+  /* text-align: center; */
+}
+
+.data-box div:nth-child(3) {
+  grid-column: 1/3;
+  text-align: center;
+}
+
+/* ////////////// */
+/* GENERAL FEATURES */
+
+.bottom-space {
+  margin-bottom: 9.6rem;
+}

@@ -6,12 +6,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BigEyeShop</title>
   <link rel="stylesheet" href="css/mainPage.css">
-  <link rel="stylesheet" href="shop">
-
+  <link rel="stylesheet" href="css/shop.css">
 </head>
 
 <body>
+  <div class="page-wrapper">
+    <div class="page-header bottom-space">
+      <div class="header-content">
+        <div class="header-left">
+          <div class="header-logo-and-name">
+            <a href="#hero">
+              <div class="img-and-logo">
+                <img class="img-logo" src="img/logo.jpg" alt="Logo firmy(oko na niebieskim tle)">
+                <div class="footer-heading-name">BigEyeShop</div>
+              </div>
+            </a>
+          </div>
 
+        </div>
+        <div class="header-right">
+          <div class="action-icons">
+            <div class="follow i-container">
+              <ion-icon class="icon-size" name="heart-outline"></ion-icon>
+              <p class="icon-text">Ulubione</p>
+            </div>
+            <div class="basket i-container">
+              <ion-icon class="icon-size" name="bag-outline"></ion-icon>
+              <p class="icon-text">Koszyk</p>
+            </div>
+            <div class="log-in i-container">
+              <ion-icon class="icon-size" name="person-circle-outline"></ion-icon>
+              <p class="icon-text">Konto</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-section-nav">
+        <div class="shop-nav-container">
+          <nav class="header-navigation">
+            <ul class="header-nav-list">
+              <li><a href="">Nowości</a></li>
+              <li><a href="">Promocje</a></li>
+              <li><a href="">Klocki</a></li>
+              <li><a href="">Puzle</a></li>
+              <li><a href="">Zabawki</a></li>
+              <li><a href="">Zabawki RC</a></li>
+              <li><a href="">Akcesoria</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <form class="search-form">
+              <input type="text" class="form-input search-input" placeholder="Wyszukaj">
+              <button type="submit" class="search-btn"><ion-icon class="icon-size"
+                  name="search-outline"></ion-icon></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main-content">
+      <div class="content-container">
+        <div class="sidebar-left-container">
+          <div class="container-title">Kategoria</div>
+          <div class="sidebar-list">
+            <ul>
+              <li><a href="">Link 1</a></li>
+              <li><a href="">Link 1</a></li>
+              <li><a href="">Link 1</a></li>
+              <li><a href="">Link 1</a></li>
+              <li><a href="">Link 1</a></li>
+              <li><a href="">Link 1</a></li>
+              <li><a href="">Link 1</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products-right-container">
+          <div class="container-title">Produkty</div>
+          <div class="products-container">
+            <div class="product-box">
+              <div class="img-box">
+                <img src="img/products/boat.jpg" alt="">
+              </div>
+              <div class="data-box">
+                <div class="prize-box">30zł</div>
+                <div class="basket-box">
+                  <ion-icon name="basket-outline"></ion-icon>
+                </div>
+                <div class="product-name-box">Krążownik wojskowy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
