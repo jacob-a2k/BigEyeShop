@@ -25,7 +25,7 @@
             </ul>
           </nav>
           <div class="header-shop drop-down">
-            <button class="drop-btn"><a href="#">Sklep</a>
+            <button class="drop-btn"><a href="shop.html">Sklep</a>
             </button>
             <div class=" drop-content">
               <a href="#">Klocki</a>
@@ -56,7 +56,7 @@
               <p class="icon-text">Koszyk</p>
             </div>
             <div class="log-in i-container">
-              <ion-icon class="icon-size" name="person-circle-outline"></ion-icon>
+              <ion-icon class="icon-size btn-show-modal" name="person-circle-outline"></ion-icon>
               <p class="icon-text">Konto</p>
             </div>
           </div>
@@ -72,11 +72,11 @@
           </p>
           <div class="hero-customers">
             <div class="customers-imgs">
-              <img src="/img/customers/customer-1.jpg" alt="">
-              <img src="/img/customers/customer-2.jpg" alt="">
-              <img src="/img/customers/customer-3.jpg" alt="">
-              <img src="/img/customers/customer-4.jpg" alt="">
-              <img src="/img/customers/customer-5.jpg" alt="">
+              <img src="img/customers/customer-1.jpg" alt="Random face">
+              <img src="img/customers/customer-2.jpg" alt="Random face">
+              <img src="img/customers/customer-3.jpg" alt="Random face">
+              <img src="img/customers/customer-4.jpg" alt="Random face">
+              <img src="img/customers/customer-5.jpg" alt="Random face">
             </div>
             <p class="customers-text"><span>5000+</span> zadowolonych klientów</p>
           </div>
@@ -530,9 +530,24 @@
 
   </footer>
 
+  <div class="modal-log-window hidden">
+    <button class="btn-close-modal">&times;</button>
+    <h2 class="modal-header">Konto, punkty, informacje.<br /> Nie czekaj, <span class="highlight">Dołącz!</span></h2>
+    <form action="#" class="modal-form">
+      <label for="#">Imię</label>
+      <input type="text" placeholder="Jan">
+      <label for="#">Nazwisko</label>
+      <input type="text" placeholder="Kowalski">
+      <label for="#">Email</label>
+      <input type="email" placeholder="jan@kowalski.com">
+      <button class="save-btn">Zaloguj</button>
+    </form>
+  </div>
+  <div class="overlay hidden"></div>
+
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
