@@ -456,7 +456,7 @@ form.search-form button:hover {
 /* RPOMOTION SECTION */
 
 .section-promotion {
-  padding: 3.2rem 0 6.8rem;
+  padding: 8rem 0 6.8rem;
   text-align: center;
 }
 
@@ -616,6 +616,7 @@ form.search-form button:hover {
   justify-content: center;
   text-align: center;
   margin-bottom: 9.6rem;
+  padding-top: 8rem;
 }
 
 .container {
@@ -997,4 +998,11 @@ form.search-form button:hover {
 .hidden {
   visibility: hidden;
   opacity: 0;
+}
+
+/* ////////////// */
+/* GENERAL FEATURES */
+
+.margin-top {
+  padding-top: 7rem;
 }
